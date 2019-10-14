@@ -36,5 +36,12 @@ public class Product {
         return actualPriceRounded;
     }
 
+    public void printInformation() {
+        System.out.println("Veikalā pārdod " + getName() + "\n" +
+                "Cena: " + getRegularPrice() + " EUR" + "\n" +
+                "Atlaide: " + getDiscount() + "%" + "\n" +
+                "Cena pēc atlaides: " + getActualPrice() + " EUR");
+            }
+
 
 }
