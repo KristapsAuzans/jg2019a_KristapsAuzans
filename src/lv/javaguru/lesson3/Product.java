@@ -1,5 +1,6 @@
 package lv.javaguru.lesson3;
 
+//Ok
 public class Product {
     private String name;
     private double regularPrice;
@@ -37,6 +38,7 @@ public class Product {
     }
 
     public void printInformation() {
+        //Frāze "Veikalā pārdod" neattiecas uz produkt objektu
         System.out.println("Veikalā pārdod " + getName() + "\n" +
                 "Cena: " + getRegularPrice() + " EUR" + "\n" +
                 "Atlaide: " + getDiscount() + "%" + "\n" +

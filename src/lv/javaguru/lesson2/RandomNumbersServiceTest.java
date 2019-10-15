@@ -2,6 +2,8 @@ package lv.javaguru.lesson2;
 
 import java.util.Random;
 
+//OK
+//šis gan nebūs īsti tests, "RandomNumbersServiceTest" klasei ir jatestē klase - "RandomNumbersService"
 public class RandomNumbersServiceTest {
     public static void main(String[] args) {
         Random randomGenerator = new Random();

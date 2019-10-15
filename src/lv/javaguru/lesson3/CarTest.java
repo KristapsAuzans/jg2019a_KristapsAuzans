@@ -1,5 +1,6 @@
 package lv.javaguru.lesson3;
 
+//OK
 public class CarTest {
     public static void main(String[] args) {
         Car first = new Car();

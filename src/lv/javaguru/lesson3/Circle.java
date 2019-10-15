@@ -1,5 +1,6 @@
 package lv.javaguru.lesson3;
 
+//Ok
 public class Circle {
     private double radius;
 
