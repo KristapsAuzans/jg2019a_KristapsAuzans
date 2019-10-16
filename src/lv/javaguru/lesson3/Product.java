@@ -39,7 +39,8 @@ public class Product {
 
     public void printInformation() {
         //Frāze "Veikalā pārdod" neattiecas uz produkt objektu
-        System.out.println("Veikalā pārdod " + getName() + "\n" +
+        //Solved
+        System.out.println("Produkts " + getName() + "\n" +
                 "Cena: " + getRegularPrice() + " EUR" + "\n" +
                 "Atlaide: " + getDiscount() + "%" + "\n" +
                 "Cena pēc atlaides: " + getActualPrice() + " EUR");

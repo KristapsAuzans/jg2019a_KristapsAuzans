@@ -9,10 +9,6 @@ public class ProductTest {
         first.setDiscount(35);
         first.printInformation();
 
-//Aizkomentētu kodu nekomitojam, bet dzēšam
-        /*System.out.println("Veikalā pārdod " + first.getName() + "\n" +
-                "Cena: " + first.getRegularPrice() + " EUR" + "\n" +
-                "Atlaide " + first.getDiscount() + "%" + "\n" +
-                "Cena pēcatlaides " + first.getActualPrice() + " EUR");*/
+
     }
 }

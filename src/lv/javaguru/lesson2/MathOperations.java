@@ -16,18 +16,18 @@ public class MathOperations {
         System.out.println("Ievadi otro skaitli");
         int secondNumber = scanner.nextInt();
 
-        double sum, difference, differenceReversed, multipication, division, divisionReversed;  //izlabojam "typo"
+        double sum, difference, differenceReversed, multiplication, division, divisionReversed;  //izlabojam "typo"
 
         sum = firstNumber + secondNumber;
 
         difference = firstNumber - secondNumber;
         differenceReversed = secondNumber - firstNumber;
-        multipication = firstNumber * (long) secondNumber;  //šeit "kastings" nav nepieciešams
+        multiplication = firstNumber * (long) secondNumber;  //šeit "kastings" nav nepieciešams
         division = firstNumber / (double) secondNumber;
         divisionReversed = secondNumber/ (double) firstNumber;
         System.out.println("Saskaitot abus skaitļus iegūstam: " + sum + "\n" +
                 "Atņemot skaitļus vienu no otra iegūstam: " + difference + " vai " + differenceReversed +  "\n" +
-                "Sareizinot skaitļus iegūstam: " + multipication + "\n" +
+                "Sareizinot skaitļus iegūstam: " + multiplication + "\n" +
                 "Dalot skaitļus vienu ar otru iegūstam: " + String.format("%.2f", division) +" vai "+ String.format("%.2f", divisionReversed) );
 
 
