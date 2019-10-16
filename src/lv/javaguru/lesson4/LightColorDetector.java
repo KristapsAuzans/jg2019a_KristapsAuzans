@@ -7,11 +7,6 @@ public class LightColorDetector {
         this.waveLength = waveLength;
     }
 
-    public int getWaveLength() {
-        return waveLength;
-    }
-
-
     public void detect() {
         if (waveLength >= 380 && waveLength < 450) {
             System.out.println("Šī ir violeta krāsa");
