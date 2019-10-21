@@ -1,4 +1,4 @@
-package lv.javaguru.lesson4;
+package lv.javaguru.lesson4.HomeWork1;
 
 public class LightColorDetector {
     private int waveLength;
