@@ -1,5 +1,6 @@
 package lv.javaguru.lesson4.HomeWork2;
 
+//Ok
 public class Stock {
     private String company;
     private double currentValue;
@@ -23,12 +24,12 @@ public class Stock {
 
 
     public double getMax() {
-        this.max = max;
+        this.max = max; //šis ir lieks, jo "max" mainīgajam iestata vērtību topašu "max"
         return max;
     }
 
     public double getMin() {
-        this.min = min;
+        this.min = min; //šis ir lieks, jo "min" mainīgajam iestata vērtību topašu "min"
         return min;
     }
 
@@ -37,11 +38,11 @@ public class Stock {
         if (currentValue < min) {
             this.currentValue = currentValue;
             this.min = currentValue;
-            return min;
+            return min; // šis return nav nepieciešams, jo beigas "currentValue" tiek atdots
         } else if (currentValue > max) {
             this.currentValue = currentValue;
             this.max = currentValue;
-            return max;
+            return max; // šis return nav nepieciešams, jo beigas "currentValue" tiek atdots
         }
         return currentValue;
 

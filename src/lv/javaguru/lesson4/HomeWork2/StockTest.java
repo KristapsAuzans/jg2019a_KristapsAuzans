@@ -1,5 +1,6 @@
 package lv.javaguru.lesson4.HomeWork2;
 
+//Ok
 public class StockTest {
     public static void main(String[] args) {
         Stock ibm = new Stock("IBM", 150);
