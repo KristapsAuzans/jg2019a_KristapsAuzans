@@ -5,7 +5,7 @@ public class BookTest {
         Book first = new Book();
         first.setTitle("Harry Potter");
         first.setAuthor("JKR");
-        first.setPageCount(895);
+        first.setPageCount(8955);
 
     }
 }
