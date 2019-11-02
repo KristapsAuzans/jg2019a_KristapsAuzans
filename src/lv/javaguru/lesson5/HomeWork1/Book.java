@@ -4,6 +4,9 @@ public class Book {
     private String author;
     private String title;
     private int pageCount;
+    private String firstTitle = "Harry Potter";
+    private String firstAuthor  = "JKR";
+
 
     public void setAuthor(String author) {
         this.author = author;
@@ -29,21 +32,23 @@ public class Book {
         return pageCount;
     }
 
-    public String equals() {
-        if (title.equals(getTitle()) && author.equals(getAuthor())) {
+    public boolean equals() {
+        if (firstTitle.equals(getTitle()) && firstAuthor.equals(getAuthor())) {
             System.out.println("Grāmatas ir identiskas");
+            return true;
         } else {
             System.out.println("Šīs nav identiskas grāmatas");
+            return false;
         }
-
-        @Override
-        public String toString() {
-            return "Grāmatas autors: " + getAuthor() + "\n" +
-                    "Grāmaatas nosaukums: " + getTitle() + "\n" +
-                    "lappušu skaits: " + getPageCount();
-        }
-
-
     }
+
+    @Override
+    public String toString() {
+        return "Grāmatas autors: " + getAuthor() + "\n" +
+                "Grāmaatas nosaukums: " + getTitle() + "\n" +
+                "lappušu skaits: " + pageCount;
+    }
+
+
 }
 

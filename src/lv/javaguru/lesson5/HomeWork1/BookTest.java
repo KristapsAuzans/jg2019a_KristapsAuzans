@@ -5,7 +5,17 @@ public class BookTest {
         Book first = new Book();
         first.setTitle("Harry Potter");
         first.setAuthor("JKR");
-        first.setPageCount(8955);
+        first.setPageCount(895);
+        System.out.println(first.getAuthor() +first.getTitle() +first.getPageCount());
+
+        first.equals();
+        first.toString();
+
+        System.out.println(first.toString());
+
+
+
+
 
     }
 }
