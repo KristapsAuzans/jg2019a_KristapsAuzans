@@ -10,7 +10,11 @@ public class LightBulb {
     }
 
 
+    //metodes nosaukums neatbilst saturam
     public boolean switcher() {
+        //labāk šādi:
+//        if (turnedOn && currentTurnOnCount <= 5) {
+        // šeit bija nepieciešams izveidot konstanti priekš maksimalā skaita
         if (turnedOn == false && currentTurnOnCount <= 5) {
             currentTurnOnCount++;
             System.out.println("ieslēgts");
@@ -18,7 +22,7 @@ public class LightBulb {
         } else {
             turnedOn = false;
             System.out.println("izslēgts");
-            return turnedOn = false;
+            return turnedOn = false; //ši pēdējā darbība nav nepieciešama, jo stāvoklis nemainās
         }
     }
 }

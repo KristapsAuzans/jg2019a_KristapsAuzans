@@ -40,25 +40,25 @@ public class TV {
     }
 
     public void nextChannel() {
-        if (turnedOn == true) {
+        if (turnedOn == true) { //labāk šādi: "if (turnedOn) { "
             this.currentChannel++;
         }
     }
 
     public void previousChannel() {
-        if (turnedOn == true) {
+        if (turnedOn == true) {//labāk šādi: "if (turnedOn) { "
             this.currentChannel--;
         }
     }
 
     public void increaseVolume() {
-        if (turnedOn == true) {
+        if (turnedOn == true) {//labāk šādi: "if (turnedOn) { "
             this.currentVolume++;
         }
     }
 
     public void decreaseVolume() {
-        if (turnedOn == true) {
+        if (turnedOn == true) { //šeit labak izmantot &&: "if (turnedOn && currentVolume > 0)"
             if (currentVolume > 0) {
                 this.currentVolume--;
             }
@@ -71,6 +71,7 @@ public class TV {
                 "Volume: " + currentVolume;
     }
 
+    //tā kā ražotājs objektam nevar mainīties, tad šādu parametru vislabāk ir iestaīt ar konstruktoru
     public void manufacturerLimitation() {
         if (getManufacturer().equals("LG")) {
             currentVolume = 20;

@@ -13,6 +13,7 @@ public class Department {
     }
 
     public void setCompany(Company company) {
+        //šis "first" objekts šeit nav nepieciešams
         Company first = new Company();
         first.setName("IBM");
         first.setRegistrationNumber("6786913-HM");

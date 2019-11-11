@@ -21,7 +21,12 @@ public class Employee {
         return salary;
     }
 
+    //šai metodei ir jābūt parametram ar tipu "Department"
+    //public void setDepartment(Department department) {
+    //      this.department = department
+    // }
     public void setDepartment() {
+        //Sī objekta veidošana jābut ir ārpus šīs klases
         Department department = new Department();
         department.setName("R&D");
         department.getCompany();

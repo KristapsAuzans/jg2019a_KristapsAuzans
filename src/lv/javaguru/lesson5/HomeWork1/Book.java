@@ -4,6 +4,8 @@ public class Book {
     private String author;
     private String title;
     private int pageCount;
+    //šis stāvoklis ir jāistata ar set metodēm vai konstruktoru
+    //nekādā gadijumā ne šādi, jo citādi izveidojot objektu visiem būs jau iesetots stavoklis
     private String firstTitle = "Harry Potter";
     private String firstAuthor  = "JKR";
 
@@ -32,6 +34,7 @@ public class Book {
         return pageCount;
     }
 
+    //šeit ir jābūt pārrakstītai "@Overriden" metodei "equals", skatīt piektās nodarbības materialus
     public boolean equals() {
         if (firstTitle.equals(getTitle()) && firstAuthor.equals(getAuthor())) {
             System.out.println("Grāmatas ir identiskas");
