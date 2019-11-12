@@ -1,5 +1,5 @@
 package lv.javaguru.lesson6.HomeWork2;
-
+//OK
 public class CarTest {
     public static void main(String[] args) {
         Car first = new Car("Ford", "Grey", 210, 67);

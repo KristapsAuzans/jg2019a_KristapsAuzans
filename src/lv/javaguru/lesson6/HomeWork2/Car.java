@@ -1,5 +1,6 @@
 package lv.javaguru.lesson6.HomeWork2;
 
+//lietojam ctrl + alt + l
 public class Car {
     private String model;
     private String color;
@@ -32,6 +33,8 @@ public class Car {
     }
 
     public boolean isDriving() {
+//        šeit vajag rakstīt vienkaršāk
+//        return currentSpeed > 0
         if (currentSpeed > 0) {
             return true;
         } else {
@@ -40,6 +43,7 @@ public class Car {
     }
 
     public boolean canAccelerate(){
+//        šeit vajag rakstīt vienkaršāk, skatīt iepriekšējo komentāru
         if (currentSpeed<maxSpeed){
             return true;
         }
@@ -49,6 +53,11 @@ public class Car {
     }
 
     public void speedUp() {
+        //tā kā šajā gadījumā mēs mainām iekšējo stāvokli, tad tas ir Ok, ka palilinam tieši "currentSpeed"
+        //labāk būtu izmantot šeit ciklu "while", jo mums nav iepriekš zināms precīzs ciklu skaits
+//        while(currentSpeed != maxSpeed) {
+//            currentSpeed++;
+//        }
         int i;
         for (i = currentSpeed; i <= maxSpeed; i++) {
             currentSpeed = i;

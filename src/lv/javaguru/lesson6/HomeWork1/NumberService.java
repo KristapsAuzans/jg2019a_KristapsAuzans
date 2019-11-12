@@ -2,6 +2,7 @@ package lv.javaguru.lesson6.HomeWork1;
 
 import java.util.Scanner;
 
+//datu ivadei ir janotiek ārpus NUmberService klases
 public class NumberService {
     private int firstNumber;
     private int secondNumber;
@@ -28,11 +29,14 @@ public class NumberService {
         return secondNumber;
     }
 
+    //šai metode ir jāpadod nepieciešamās ieejas vērtības kā metodes parametri un atdot aprēķināto vērtību
     public void sumInRange() {
         int i = getSecondNumber();
         int j = getFirstNumber();
         int sum = 0;
+
         if (getFirstNumber() > getSecondNumber()) {
+            //šo loģiku jāiznes atsevišķā metodē, jo tā atkārtojās
             while (getFirstNumber() - 1 > i) {
                 sum = sum + i + 1;
                 i++;
@@ -44,10 +48,11 @@ public class NumberService {
                 j++;
             }
         }
+//        šai izvadei ir jābūt testa klasē
         System.out.println("Starpskaitļu summa ir: " + sum);
     }
 
-
+//skatīt iepriekšējos komentārus
     public void getEvenNumberCount() {
         int i = getFirstNumber();
         int j = getSecondNumber();
