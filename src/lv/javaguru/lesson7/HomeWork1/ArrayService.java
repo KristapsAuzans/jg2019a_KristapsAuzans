@@ -2,6 +2,7 @@ package lv.javaguru.lesson7.HomeWork1;
 
 import java.util.Random;
 
+//OK
 public class ArrayService {
 
     public int[] create(int n) {
@@ -11,7 +12,7 @@ public class ArrayService {
     public void fillArrayWithRandomNumbers(int[] array) {
         Random randomGenerator = new Random();
         for (int i = 0; i < array.length; i++) {
-            array[i] = randomGenerator.nextInt(101);
+            array[i] = randomGenerator.nextInt(101); //šo labak definēt kā konstanti
         }
     }
 

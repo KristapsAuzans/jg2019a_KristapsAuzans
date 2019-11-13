@@ -1,5 +1,6 @@
 package lv.javaguru.lesson7.HomeWork2;
 
+//rakstām ktram testa gadījumam metodi atsevišķi
 public class ArrayServiceTest2 {
     public static void main(String[] args) {
         ArrayService2 first = new ArrayService2();

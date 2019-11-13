@@ -11,7 +11,7 @@ public class ArrayService2 {
     public void fillArrayWithRandomNumbers(int[] array) {
         Random randomGenerator = new Random();
         for (int i = 0; i < array.length; i++) {
-            array[i] = randomGenerator.nextInt(101);
+            array[i] = randomGenerator.nextInt(101);//šo labak definēt kā konstanti
         }
     }
 
@@ -22,6 +22,7 @@ public class ArrayService2 {
     }
 
     public void sortArray(int[] array) {
+        //šeit bija jāizdara tas manuāli, bez utilītas
         Arrays.sort(array);
         System.out.println(Arrays.toString(array));
     }
