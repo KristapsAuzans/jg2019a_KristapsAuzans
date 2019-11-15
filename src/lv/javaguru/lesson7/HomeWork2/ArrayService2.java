@@ -32,8 +32,8 @@ public class ArrayService2 {
         int[] swappedArray = new int[array.length];
 
         for(int i = array.length-1; i>=0; i--){
-           swappedArray[j]= array[i];
-           j++;
+            swappedArray[j]= array[i];
+            j++;
         }
         System.out.println(Arrays.toString(swappedArray));
     }

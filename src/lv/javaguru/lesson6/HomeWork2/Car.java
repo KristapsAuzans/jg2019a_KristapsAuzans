@@ -64,10 +64,5 @@ public class Car {
         }
     }
 
-    /*
 
-metode (speedUp), kas palielina pašreizējo ātrumu (currentSpeed) par 1 vienību līdz maksimumam. Jūs varat izmantot metodi accelerate ciklā.
-Pārbaudiet klases Car darbu.
-
-     */
 }
