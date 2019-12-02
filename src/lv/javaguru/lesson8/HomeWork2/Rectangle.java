@@ -1,5 +1,6 @@
 package lv.javaguru.lesson8.HomeWork2;
 
+//"implements Shape" nav nepieciešams, jo AbstractShape šo interfeisu jau implementē
 public class Rectangle extends AbstractShape implements Shape {
    private final double height;
    private final double width;

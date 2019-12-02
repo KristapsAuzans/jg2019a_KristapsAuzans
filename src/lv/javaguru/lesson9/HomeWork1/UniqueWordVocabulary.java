@@ -4,6 +4,8 @@ public class UniqueWordVocabulary {
     public static void main(String[] args) {
         UniqueWordCollection first = new UniqueWordCollection();
 
+        //šeit bija jābūt metodei, kurai mēs padodam vāŗdu
+        //piemēram, first.addWord(""UniqueWord1"")
         first.addWord();
         first.printToConsole();
         first.getUniqueWords();

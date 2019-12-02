@@ -1,12 +1,17 @@
 package lv.javaguru.lesson9.HomeWork2;
 
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Map;
 
+//šeit uzdevuma prasība nav izpildīta - nestrādā
 public class UniqueWordCounter {
     Map<Integer, String> fruits = new HashMap<Integer, String>();
 
 
+    //šai metodei ir jābūt parametram String
+    //citādi man nav iespējas salikt tur citādāku sarakstu,
+    // piemēram, "gurķis", bumbieris" utt.
     public void addLine() {
         fruits.put(1, "Apple");
         fruits.put(2, "Mango");
@@ -16,8 +21,10 @@ public class UniqueWordCounter {
         fruits.put(6, "Mango");
     }
 
-    public void returnMostCommon() {
-        int i;
+    //metodei ir jāatgriež aprēķinatā vērtība
+    //tātad jābūt atgriežamajam tipam "String" nevis "void"
+    /*public void returnMostCommon() {
+        int i; //šim ir jābūt iekš "for" tur kur to parasti definē
         for (Map.Entry<Integer, String> mostCommon : fruits.entrySet()) {
             for (i = 0; i <= fruits.size(); i++){
                 if (fruits.containsValue(mostCommon.getValue())) {
@@ -28,6 +35,24 @@ public class UniqueWordCounter {
 
             System.out.println("Value: " + mostCommon.getValue() + i);
         }
+    }*/
+
+    //viens variants ir šādi, izmantojot paņēmienus kurus esam nodarbībās izmantojuši
+    //ja kas nodarbībā paskaidrošu, tik atgādini lūdzu
+    public String returnMostCommon() {
+        Map<String, Integer> mostCommonFruits = new HashMap<>();
+        for(String fruit : fruits.values()) {
+            Integer commonFruitCount = mostCommonFruits.get(fruit);
+            mostCommonFruits.put(fruit, commonFruitCount == null ? 0 : ++commonFruitCount);
+        }
+
+        Map.Entry<String, Integer> mostCommonEntry = mostCommonFruits.entrySet().iterator().next();
+        for (Map.Entry<String, Integer> entry : mostCommonFruits.entrySet()) {
+            if (entry.getValue() > mostCommonEntry.getValue()) {
+                mostCommonEntry = entry;
+            }
+        }
+        return mostCommonEntry.getKey();
     }
 }
 //mostCommon.getValue())

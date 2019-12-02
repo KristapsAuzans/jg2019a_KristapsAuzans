@@ -4,7 +4,7 @@ public class WordCounterTest {
     public static void main(String[] args) {
         UniqueWordCounter first = new UniqueWordCounter();
         first.addLine();
-        first.returnMostCommon();
+        System.out.println(first.returnMostCommon());
 
 
     }

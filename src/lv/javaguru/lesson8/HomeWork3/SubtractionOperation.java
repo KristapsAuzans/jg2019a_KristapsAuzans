@@ -1,5 +1,6 @@
 package lv.javaguru.lesson8.HomeWork3;
 
+//skatīt komentārus "AdditionOperation"
 public class SubtractionOperation implements MathOperation {
     double firstNumber;
     double secondNumber;

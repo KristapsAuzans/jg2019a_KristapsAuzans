@@ -1,5 +1,6 @@
 package lv.javaguru.lesson8.HomeWork3;
 
+//skatīt komentārus "AdditionOperation"
 public class MultiplicationOperation implements MathOperation {
 
     double firstNumber;

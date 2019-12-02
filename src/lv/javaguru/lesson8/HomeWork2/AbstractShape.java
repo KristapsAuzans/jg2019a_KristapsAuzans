@@ -1,6 +1,7 @@
 package lv.javaguru.lesson8.HomeWork2;
 
-public abstract class AbstractShape implements Shape {
+public abstract class   AbstractShape implements Shape {
+
     abstract String color();
     abstract int edges();
 
