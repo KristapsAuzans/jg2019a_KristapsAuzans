@@ -1,5 +1,6 @@
 package lv.javaguru.lesson8.HomeWork1;
 
+//hw8 Plaģiāts
 public class CarDescription {
     public static void main(String[] args) {
         CarDescription carDescription = new CarDescription();
