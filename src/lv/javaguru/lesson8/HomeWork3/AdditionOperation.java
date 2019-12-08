@@ -16,7 +16,7 @@ public class AdditionOperation implements MathOperation {
 
     @Override
     public double execute(double firstNumber, double secondNumber) {
-        double result = firstNumber+secondNumber;
+        double result = firstNumber + secondNumber;
         //šādas "sout" izvades var likt tikai
         System.out.println("Rezultāts saskaitot " + firstNumber + " un " + secondNumber + " ir " + result);
         return result;
