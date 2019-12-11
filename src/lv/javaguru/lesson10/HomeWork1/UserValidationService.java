@@ -10,6 +10,9 @@ public class UserValidationService {
         System.out.println("Creating a User");
         User first = new User("K", "Auzans", -29);
         boolean result = true;
+
+        //validācijas šeit labāk būtu sadalīt pa atsevišķām metodēm
+        //bet ideālā gadījumā vajadzēja realizēt līdzīgi kā ar MathOperations mājas darbā ar aritmētiskajām izteiksmēm
         try {
             if (first.name.length() <= 3 || first.name.length() >= 15)
                 throw new Exception("String Length out of order");
